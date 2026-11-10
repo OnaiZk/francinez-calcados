@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>PAINEL DA LOJA — Francinez Calçados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600;700&family=Hanken+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="admin-body">
+  <!-- Top Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <span>PAINEL EXCLUSIVO DA PROPRIETÁRIA · FRANCINEZ CALÇADOS</span>
+      <span class="announcement-sep" aria-hidden="true">|</span>
+      <span>SESSÃO AUTENTICADA E CRIPTOGRAFADA</span>
+    </div>
+  </div>
+
+  <!-- Admin Header -->
+  <header class="site-header">
+    <div class="admin-header-main">
+      <a href="/" class="brand-wordmark" aria-label="Francinez Calçados — Ver Vitrine Pública">
+        <span class="wordmark-main">FRANCINEZ</span>
+        <span class="wordmark-sub">PAINEL PRIVADO DA LOJA</span>
+      </a>
+
+      <div class="admin-header-actions">
+        <a href="__ADMIN_PATH__/divulgacao" class="btn-sharp-outline">POSTS WHATSAPP</a>
+        <a href="/" target="_blank" rel="noopener noreferrer" class="btn-sharp-gold">VER VITRINE →</a>
+        <button type="button" class="btn-sharp-outline admin-logout-btn" id="btn-admin-logout">SAIR</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-container">
+    <!-- Status & Quick WhatsApp Card -->
+    <section class="admin-summary-bar" aria-label="Resumo da loja">
+      <div class="admin-stat-box">
+        <span class="admin-stat-label">MODELOS NO AR</span>
+        <strong class="admin-stat-val tabular" id="stat-active-count">0</strong>
+      </div>
+      <div class="admin-stat-box">
+        <span class="admin-stat-label">PAUSADOS (ESGOTADOS)</span>
+        <strong class="admin-stat-val tabular" id="stat-hidden-count">0</strong>
+      </div>
+      <div class="admin-stat-box admin-stat-wa">
+        <label class="admin-stat-label" for="admin-wa-input">WHATSAPP DOS PEDIDOS</label>
+        <div class="admin-wa-row">
+          <input
+            type="tel"
+            id="admin-wa-input"
+            class="field-input tabular"
+            value="5511981264344"
+            aria-label="WhatsApp da loja com DDI e DDD"
+          />
+          <button type="button" class="btn-sharp-gold" id="admin-save-wa-btn">SALVAR</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Primary Mobile Navigation Tabs -->
+    <div class="admin-tabs-bar admin-tabs-3" role="tablist" aria-label="Seções do painel administrativo">
+      <button
+        type="button"
+        class="admin-tab-btn"
+        role="tab"
+        id="tab-btn-list"
+        aria-selected="true"
+        data-admin-tab="list"
+      >
+        CALÇADOS (<span id="tab-total-count">0</span>)
+      </button>
+      <button
+        type="button"
+        class="admin-tab-btn"
+        role="tab"
+        id="tab-btn-form"
+        aria-selected="false"
+        data-admin-tab="form"
+      >
+        + CADASTRAR NOVO
+      </button>
+      <button
+        type="button"
+        class="admin-tab-btn"
+        role="tab"
+        id="tab-btn-security"
+        aria-selected="false"
+        data-admin-tab="security"
+      >
+        SENHA & BACKUP
+      </button>
+    </div>
+
+    <!-- Toast Feedback -->
+    <div class="admin-toast" id="admin-toast" hidden role="status" aria-live="polite"></div>
+
+    <!-- ======================================================================
+         TAB 1: GERENCIAR CALÇADOS CADASTRADOS
+         ====================================================================== -->
+    <section class="admin-panel-section" id="admin-section-list" role="tabpanel" aria-labelledby="tab-btn-list">
+      <div class="admin-list-toolbar">
+        <div class="admin-search-box">
+          <input
+            type="search"
+            id="admin-search-input"
+            class="field-input"
+            placeholder="Buscar calçado pelo nome, marca ou linha..."
+            aria-label="Buscar calçado cadastrado"
+          />
+        </div>
+        <button type="button" class="btn-campaign-primary" id="btn-go-new-product">
+          + ADICIONAR NOVO TÊNIS / CALÇADO
+        </button>
+      </div>
+
+      <div class="admin-products-list" id="admin-products-list"></div>
+    </section>
+
+    <!-- ======================================================================
+         TAB 2: CADASTRAR OU EDITAR CALÇADO (COM ESTÚDIO AUTOMÁTICO DE FOTO)
+         ====================================================================== -->
+    <section class="admin-panel-section" id="admin-section-form" role="tabpanel" aria-labelledby="tab-btn-form" hidden>
+      <form id="admin-product-form" class="admin-form-card" novalidate>
+        <div class="admin-form-header">
+          <div>
+            <h1 class="admin-form-title" id="form-heading-title">CADASTRAR NOVO CALÇADO</h1>
+            <p class="admin-form-subtitle">
+              Envie qualquer foto do celular: o sistema remove o fundo e gera automaticamente a foto no padrão de estúdio da loja.
+            </p>
+          </div>
+          <button type="button" class="btn-sharp-outline" id="btn-cancel-edit">
+            VOLTAR P/ LISTA
+          </button>
+        </div>
+
+        <input type="hidden" id="edit-product-id" value="" />
+
+        <!-- STEP 1: FOTO COM PADRONIZAÇÃO AUTOMÁTICA DE ESTÚDIO -->
+        <div class="admin-step-box">
+          <h2 class="admin-step-title">FOTO DO CALÇADO (ESTÚDIO AUTOMÁTICO)</h2>
+          <p class="admin-step-hint">
+            Pode tirar foto na mão, na mesa ou no chão. O sistema centraliza o tênis, aplica o fundo bege padrão e cria a sombra automaticamente.
+          </p>
+
+          <div class="studio-uploader-grid">
+            <!-- Left: Upload Trigger & Controls -->
+            <div class="studio-upload-controls">
+              <label class="btn-upload-camera" for="studio-file-input">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                <span>ESCOLHER FOTO DA GALERIA OU TIRAR FOTO</span>
+              </label>
+              <input type="file" id="studio-file-input" accept="image/jpeg,image/png,image/webp" hidden />
+
+              <div class="studio-adjust-panel" id="studio-adjust-panel">
+                <div class="studio-mode-row">
+                  <button
+                    type="button"
+                    class="studio-tool-btn"
+                    id="btn-mode-cutout"
+                    aria-pressed="true"
+                  >
+                    Recorte + Fundo Estúdio
+                  </button>
+                  <button
+                    type="button"
+                    class="studio-tool-btn"
+                    id="btn-mode-frame"
+                    aria-pressed="false"
+                  >
+                    Foto Inteira no Estúdio
+                  </button>
+                </div>
+
+                <div class="studio-mode-row">
+                  <button type="button" class="studio-tool-btn" id="btn-flip-horizontal">
+                    ↔ Virar Lado do Tênis (Direita / Esquerda)
+                  </button>
+                </div>
+
+                <div class="studio-slider-wrap" id="studio-tolerance-wrap">
+                  <div class="studio-slider-header">
+                    <label for="studio-tolerance-range">Ajuste do Recorte do Fundo</label>
+                    <span class="tabular" id="studio-tolerance-val">Automático (44)</span>
+                  </div>
+                  <input
+                    type="range"
+                    id="studio-tolerance-range"
+                    min="12"
+                    max="85"
+                    value="44"
+                  />
+                  <div class="studio-slider-SavedHint">
+                    Dica: aumente se sobrar fundo ao redor do tênis, ou diminua se o tênis for muito claro.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Standardized Studio Preview -->
+            <div class="studio-preview-column">
+              <div class="studio-preview-plinth">
+                <div class="plinth-top-bar">
+                  <span class="badge-tier" id="preview-badge-tier">PADRÃO ESTÚDIO AUTOMÁTICO</span>
+                </div>
+                <img
+                  id="studio-result-preview"
+                  src="/assets/products/nb-9060-castor.png"
+                  alt="Prévia padronizada em estúdio"
+                  class="studio-img"
+                />
+              </div>
+              <div class="studio-preview-caption">
+                <span id="studio-status-text">Prévia no padrão da vitrine (Fundo Bege #EFECE6 · Proporção 4:3)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: DADOS DO CALÇADO -->
+        <div class="admin-step-box">
+          <h2 class="admin-step-title">NOME, MARCA E LINHA DO CALÇADO</h2>
+
+          <div class="admin-fields-grid">
+            <div class="admin-field">
+              <label for="prod-name">Nome do Calçado *</label>
+              <input
+                type="text"
+                id="prod-name"
+                class="field-input"
+                maxlength="100"
+                placeholder="Ex.: Tênis Nike Air Max 90"
+                required
+              />
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-brand">Marca *</label>
+              <input
+                type="text"
+                id="prod-brand"
+                class="field-input"
+                list="brand-suggestions"
+                maxlength="50"
+                placeholder="Ex.: Nike, New Balance, Puma..."
+                required
+              />
+              <datalist id="brand-suggestions">
+                <option value="New Balance"></option>
+                <option value="Nike"></option>
+                <option value="Puma"></option>
+                <option value="Miu Miu"></option>
+                <option value="Vans"></option>
+                <option value="Oakley"></option>
+                <option value="Adidas"></option>
+                <option value="Fila"></option>
+                <option value="Grifes & Slides"></option>
+              </datalist>
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-category">Categoria *</label>
+              <select id="prod-category" class="field-input">
+                <option value="Tênis">Tênis</option>
+                <option value="Plataforma">Plataforma</option>
+                <option value="Slides & Sandálias">Slides & Sandálias</option>
+              </select>
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-tier">Classificação / Linha *</label>
+              <select id="prod-tier" class="field-input">
+                <option value="Importado · 1ª Linha">Importado · 1ª Linha</option>
+                <option value="1ª Linha">1ª Linha</option>
+                <option value="2ª Linha">2ª Linha</option>
+              </select>
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-color-name">Nome da Cor Principal *</label>
+              <div class="admin-color-input-row">
+                <input
+                  type="color"
+                  id="prod-color-hex"
+                  class="admin-color-picker"
+                  value="#A58E74"
+                  aria-label="Cor da amostra"
+                />
+                <input
+                  type="text"
+                  id="prod-color-name"
+                  class="field-input"
+                  maxlength="60"
+                  placeholder="Ex.: Bege / Branco"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-desc">Descrição Curta</label>
+              <input
+                type="text"
+                id="prod-desc"
+                class="field-input"
+                maxlength="280"
+                placeholder="Ex.: Modelo confortável a pronta entrega com ótimo acabamento."
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: PREÇOS NO PIX E NO CARTÃO -->
+        <div class="admin-step-box">
+          <h2 class="admin-step-title">PREÇO NO PIX E NO CARTÃO</h2>
+
+          <div class="admin-fields-grid">
+            <div class="admin-field">
+              <label for="prod-pix-price">Valor à Vista no Pix (R$) *</label>
+              <input
+                type="number"
+                step="0.01"
+                min="1"
+                max="50000"
+                id="prod-pix-price"
+                class="field-input tabular"
+                placeholder="Ex.: 129.99"
+                required
+              />
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-card-price">Valor no Cartão (R$) — Opcional</label>
+              <input
+                type="number"
+                step="0.01"
+                min="1"
+                max="50000"
+                id="prod-card-price"
+                class="field-input tabular"
+                placeholder="Deixe vazio p/ 'Consultar taxa'"
+              />
+            </div>
+
+            <div class="admin-field">
+              <label for="prod-installments">Texto do Parcelamento</label>
+              <input
+                type="text"
+                id="prod-installments"
+                class="field-input"
+                maxlength="80"
+                placeholder="Calculado automaticamente (ou Consultar taxa)"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 4: NUMERAÇÕES DISPONÍVEIS -->
+        <div class="admin-step-box">
+          <div class="admin-sizes-header">
+            <h2 class="admin-step-title">NUMERAÇÕES DISPONÍVEIS</h2>
+            <div class="admin-size-presets">
+              <button type="button" class="btn-preset-size" data-size-preset="fem">Grade 34 ao 39</button>
+              <button type="button" class="btn-preset-size" data-size-preset="masc">Grade 38 ao 43</button>
+              <button type="button" class="btn-preset-size" data-size-preset="all">Grade 34 ao 43</button>
+            </div>
+          </div>
+
+          <div class="admin-size-grid" id="admin-size-checkboxes" role="group" aria-label="Selecione os números disponíveis">
+            <button type="button" class="admin-size-toggle" data-size-num="33" aria-pressed="false">33</button>
+            <button type="button" class="admin-size-toggle" data-size-num="34" aria-pressed="true">34</button>
+            <button type="button" class="admin-size-toggle" data-size-num="35" aria-pressed="true">35</button>
+            <button type="button" class="admin-size-toggle" data-size-num="36" aria-pressed="true">36</button>
+            <button type="button" class="admin-size-toggle" data-size-num="37" aria-pressed="true">37</button>
+            <button type="button" class="admin-size-toggle" data-size-num="38" aria-pressed="true">38</button>
+            <button type="button" class="admin-size-toggle" data-size-num="39" aria-pressed="true">39</button>
+            <button type="button" class="admin-size-toggle" data-size-num="40" aria-pressed="false">40</button>
+            <button type="button" class="admin-size-toggle" data-size-num="41" aria-pressed="false">41</button>
+            <button type="button" class="admin-size-toggle" data-size-num="42" aria-pressed="false">42</button>
+            <button type="button" class="admin-size-toggle" data-size-num="43" aria-pressed="false">43</button>
+            <button type="button" class="admin-size-toggle" data-size-num="44" aria-pressed="false">44</button>
+          </div>
+        </div>
+
+        <!-- STEP 5: CORES EXTRAS (OPCIONAL) -->
+        <div class="admin-step-box">
+          <div class="admin-sizes-header">
+            <div>
+              <h2 class="admin-step-title">OUTRAS CORES DESTE MESMO MODELO (OPCIONAL)</h2>
+              <p class="admin-step-hint">Se tiver mais cores do mesmo tênis, adicione abaixo. Qualquer foto enviada também será padronizada automaticamente.</p>
+            </div>
+            <button type="button" class="btn-sharp-outline" id="btn-add-extra-color">
+              + ADICIONAR OUTRA COR
+            </button>
+          </div>
+
+          <div class="admin-extra-colors-list" id="admin-extra-colors-list"></div>
+        </div>
+
+        <div class="admin-form-submit-bar">
+          <button type="submit" class="btn-save-product" id="btn-submit-product">
+            SALVAR CALÇADO NO CATÁLOGO
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ======================================================================
+         TAB 3: SENHA & SEGURANÇA + BACKUP
+         ====================================================================== -->
+    <section class="admin-panel-section" id="admin-section-security" role="tabpanel" aria-labelledby="tab-btn-security" hidden>
+      <div class="admin-form-card">
+        <div class="admin-form-header">
+          <div>
+            <h2 class="admin-form-title">Segurança &amp; Senha de Acesso</h2>
+            <p class="admin-form-subtitle">
+              Altere sua senha administrativa sempre que desejar. Ao trocar a senha, todos os outros aparelhos conectados são desconectados automaticamente.
+            </p>
+          </div>
+        </div>
+
+        <form id="admin-password-form" class="admin-step-box" novalidate>
+          <h3 class="admin-step-title">ALTERAR SENHA DO PAINEL</h3>
+
+          <div class="admin-fields-grid">
+            <div class="admin-field">
+              <label for="pw-current">Senha Atual *</label>
+              <input
+                type="password"
+                id="pw-current"
+                class="field-input"
+                autocomplete="current-password"
+                placeholder="Digite a senha atual"
+                required
+              />
+            </div>
+
+            <div class="admin-field">
+              <label for="pw-new">Nova Senha (mínimo 8 caracteres) *</label>
+              <input
+                type="password"
+                id="pw-new"
+                class="field-input"
+                autocomplete="new-password"
+                minlength="8"
+                placeholder="Crie uma nova senha forte"
+                required
+              />
+            </div>
+
+            <div class="admin-field">
+              <label for="pw-confirm">Confirmar Nova Senha *</label>
+              <input
+                type="password"
+                id="pw-confirm"
+                class="field-input"
+                autocomplete="new-password"
+                minlength="8"
+                placeholder="Repita a nova senha"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="admin-form-submit-bar">
+            <button type="submit" class="btn-sharp-gold" id="btn-change-password">
+              ATUALIZAR SENHA COM SEGURANÇA
+            </button>
+          </div>
+        </form>
+
+        <div class="admin-backup-bar">
+          <div>
+            <h3 class="admin-backup-title">CÓPIA DE SEGURANÇA DO CATÁLOGO (BACKUP)</h3>
+            <p class="admin-backup-desc">
+              Todos os produtos e fotos padronizadas já ficam salvos automaticamente no servidor seguro da loja. Use os botões abaixo caso queira guardar uma cópia em arquivo.
+            </p>
+          </div>
+          <div class="admin-backup-actions">
+            <button type="button" class="btn-sharp-outline" id="btn-export-json">BAIXAR BACKUP (.JSON)</button>
+            <label class="btn-sharp-outline admin-file-label">
+              IMPORTAR BACKUP
+              <input type="file" id="input-import-json" accept=".json" hidden />
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="__ADMIN_PATH__/admin.js"></script>
+</body>
+</html>

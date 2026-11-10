@@ -1,0 +1,1157 @@
+{
+  "whatsAppPhone": "5511981264344",
+  "updatedAt": "2026-11-10T21:39:21.127Z",
+  "products": [
+    {
+      "id": "nb-9060",
+      "name": "Tênis New Balance 9060",
+      "brand": "New Balance",
+      "category": "Tênis",
+      "tier": "Importado · 1ª Linha",
+      "description": "Modelo robusto em camurça e tela respirável com solado macio e acabamento de primeira linha.",
+      "pixPrice": 129.99,
+      "cardPrice": 159.99,
+      "installments": "em até 3x de R$ 53,33",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sizeLabel": "34–40",
+      "colors": [
+        {
+          "name": "Castor / Areia",
+          "hex": "#A58E74",
+          "image": "assets/products/nb-9060-castor.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ]
+        },
+        {
+          "name": "Branco / Prata / Creme",
+          "hex": "#EAE6DF",
+          "image": "assets/products/nb-9060-branco.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Branco / Detalhe Preto",
+          "hex": "#D5D1C8",
+          "image": "assets/products/nb-9060-branco.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Preto / Branco",
+          "hex": "#232220",
+          "image": "assets/products/nb-9060-castor.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miumiu-camurca",
+      "name": "Tênis Miu Miu Camurça Cadarço Duplo",
+      "brand": "Miu Miu",
+      "category": "Tênis",
+      "tier": "Importado · 1ª Linha",
+      "description": "Acabamento em camurça macia, cadarço duplo bicolor e solado baixo em borracha natural.",
+      "pixPrice": 109.99,
+      "cardPrice": 139.99,
+      "installments": "em até 3x de R$ 46,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Caramelo / Creme",
+          "hex": "#8F5E3B",
+          "image": "assets/products/miumiu-camurca.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Areia / Nude",
+          "hex": "#CBB79F",
+          "image": "assets/products/miumiu-camurca.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Marrom Café",
+          "hex": "#4B3628",
+          "image": "assets/products/miumiu-camurca.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oakley-stratus",
+      "name": "Tênis Oakley Stratus",
+      "brand": "Oakley",
+      "category": "Tênis",
+      "tier": "Importado · 1ª Linha",
+      "description": "Modelo masculino e feminino com estrutura reforçada, detalhes em relevo e solado tratorado.",
+      "pixPrice": 129.99,
+      "cardPrice": 159.99,
+      "installments": "em até 3x de R$ 53,33",
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "38–43",
+      "colors": [
+        {
+          "name": "Cinza / Grafite",
+          "hex": "#8A8D8F",
+          "image": "assets/products/oakley-stratus.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "name": "Areia / Bege",
+          "hex": "#C8B99E",
+          "image": "assets/products/oakley-stratus.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "name": "Branco / Gelo",
+          "hex": "#E8E6E1",
+          "image": "assets/products/oakley-stratus.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nb-983-musgo",
+      "name": "Tênis New Balance 983",
+      "brand": "New Balance",
+      "category": "Tênis",
+      "tier": "Importado · 1ª Linha",
+      "description": "Combinação em camurça e tecido respirável com solado bicolor macio para o dia a dia.",
+      "pixPrice": 119.99,
+      "cardPrice": 139.99,
+      "installments": "em até 3x de R$ 46,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Verde Oliva / Off-White",
+          "hex": "#616A52",
+          "image": "assets/products/nb-983-musgo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Preto / Caramelo",
+          "hex": "#272523",
+          "image": "assets/products/nb-983-musgo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Bege / Caramelo",
+          "hex": "#C6B094",
+          "image": "assets/products/nb-983-musgo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Branco / Rosa Suave",
+          "hex": "#E8D5D2",
+          "image": "assets/products/nb-983-musgo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nb-530",
+      "name": "Tênis New Balance 530",
+      "brand": "New Balance",
+      "category": "Tênis",
+      "tier": "Importado · 1ª Linha",
+      "description": "Visual retrô esportivo muito leve e arejado, ótimo para caminhada, academia e uso diário.",
+      "pixPrice": 139.99,
+      "cardPrice": 159.99,
+      "installments": "em até 3x de R$ 53,33",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Marrom Café / Bege",
+          "hex": "#6B4C35",
+          "image": "assets/products/nb-530-marrom.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Off-White / Caramelo",
+          "hex": "#DFD5C6",
+          "image": "assets/products/nb-530-marrom.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Branco / Prata / Preto",
+          "hex": "#E6E6E4",
+          "image": "assets/products/nb-530-marrom.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nike-sb-plataforma",
+      "name": "Tênis Nike SB Plataforma Camurça",
+      "brand": "Nike",
+      "category": "Plataforma",
+      "tier": "Importado · 1ª Linha",
+      "description": "Solado plataforma reto com costura aparente, cabedal em camurça e cadarço largo.",
+      "pixPrice": 149.99,
+      "cardPrice": 169.99,
+      "installments": "em até 3x de R$ 56,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Camurça Caramelo / Branco",
+          "hex": "#9E6B43",
+          "image": "assets/products/nike-sb-plataforma.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Rosé / Branco",
+          "hex": "#D9B3B0",
+          "image": "assets/products/nike-sb-plataforma.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Off-White / Cinza",
+          "hex": "#DDD9D0",
+          "image": "assets/products/nike-sb-plataforma.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Preto / Branco",
+          "hex": "#1E1D1C",
+          "image": "assets/products/nike-sb-plataforma.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nike-dunk",
+      "name": "Tênis Nike Dunk Low",
+      "brand": "Nike",
+      "category": "Tênis",
+      "tier": "2ª Linha",
+      "description": "Clássico casual de cano baixo com ótimo custo-benefício para o dia a dia.",
+      "pixPrice": 79.99,
+      "cardPrice": 99.99,
+      "installments": "em até 3x de R$ 33,33",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "sizeLabel": "34–42",
+      "colors": [
+        {
+          "name": "Areia / Branco",
+          "hex": "#C5B49D",
+          "image": "assets/products/nike-dunk-bege.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Rosa Suave / Branco",
+          "hex": "#DFB9B7",
+          "image": "assets/products/nike-dunk-bege.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Marrom / Branco",
+          "hex": "#634837",
+          "image": "assets/products/nike-dunk-bege.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Cinza / Branco",
+          "hex": "#9B9A96",
+          "image": "assets/products/nike-dunk-bege.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Preto / Branco",
+          "hex": "#21201E",
+          "image": "assets/products/nike-dunk-bege.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puma-palermo",
+      "name": "Tênis Puma Palermo Camurça",
+      "brand": "Puma",
+      "category": "Tênis",
+      "tier": "1ª Linha",
+      "description": "Modelo em camurça macia com faixa lateral contrastante e solado confortável.",
+      "pixPrice": 99.99,
+      "cardPrice": null,
+      "installments": "Consultar taxa da maquininha",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Marrom Café / Branco",
+          "hex": "#4E3A2F",
+          "image": "assets/products/puma-palermo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Bege / Rosé Suave",
+          "hex": "#D5B8AC",
+          "image": "assets/products/puma-palermo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Branco / Gelo",
+          "hex": "#EAE7E1",
+          "image": "assets/products/puma-palermo.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miumiu-slide",
+      "name": "Chinelo Slide Miu Miu Crochê",
+      "brand": "Miu Miu",
+      "category": "Slides & Sandálias",
+      "tier": "Importado · 1ª Linha",
+      "description": "Tira larga em trama natural tipo ráfia/crochê com palmilha anatômica macia.",
+      "pixPrice": 149.99,
+      "cardPrice": 169.99,
+      "installments": "até 3x de R$ 56,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Preto / Palha Natural",
+          "hex": "#23201E",
+          "image": "assets/products/miumiu-slide.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Caramelo / Palha Natural",
+          "hex": "#9C6B49",
+          "image": "assets/products/miumiu-slide.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Off-White / Palha Natural",
+          "hex": "#EAE3D5",
+          "image": "assets/products/miumiu-slide.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lv-sandalia",
+      "name": "Sandália Louis Vuitton Monogram",
+      "brand": "Grifes & Slides",
+      "category": "Slides & Sandálias",
+      "tier": "Importado · 1ª Linha",
+      "description": "Rasteira anatômica com tira estampada e detalhe dourado no dedo.",
+      "pixPrice": 149.99,
+      "cardPrice": 169.99,
+      "installments": "até 3x de R$ 56,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Marrom Monograma / Gold",
+          "hex": "#5A3D2B",
+          "image": "assets/products/lv-sandalia.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gucci-slide",
+      "name": "Chinelo Slide Gucci Anel Gold",
+      "brand": "Grifes & Slides",
+      "category": "Slides & Sandálias",
+      "tier": "Importado · 1ª Linha",
+      "description": "Tiras transpassadas em preto com aplicação dourada e solado anatômico confortável.",
+      "pixPrice": 149.99,
+      "cardPrice": 169.99,
+      "installments": "até 3x de R$ 56,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Preto / Ferragem Dourada",
+          "hex": "#1C1B1A",
+          "image": "assets/products/gucci-slide.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adidas-bonega",
+      "name": "Tênis Adidas Bonega Plataforma",
+      "brand": "Adidas",
+      "category": "Plataforma",
+      "tier": "1ª Linha",
+      "description": "Cabedal em tom neutro com detalhe dourado no cadarço e solado plataforma macio.",
+      "pixPrice": 149.99,
+      "cardPrice": null,
+      "installments": "Consultar taxa da maquininha",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Off-White / Detalhe Dourado",
+          "hex": "#EFECE4",
+          "image": "assets/products/adidas-bonega.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Camurça Castor / Creme",
+          "hex": "#9D8468",
+          "image": "assets/products/adidas-bonega.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vans-hylane",
+      "name": "Tênis Vans Hylane Solado Gum",
+      "brand": "Vans",
+      "category": "Tênis",
+      "tier": "1ª Linha",
+      "description": "Lingueta acolchoada, faixa lateral em relevo e solado com biqueira em borracha natural.",
+      "pixPrice": 149.99,
+      "cardPrice": null,
+      "installments": "Consultar taxa da maquininha",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Preto / Branco / Gum",
+          "hex": "#211F1D",
+          "image": "assets/products/vans-hylane.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Azul Marinho / Preto",
+          "hex": "#324354",
+          "image": "assets/products/vans-hylane.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vans-knu-skool",
+      "name": "Tênis Vans Knu Skool",
+      "brand": "Vans",
+      "category": "Tênis",
+      "tier": "Importado · 1ª Linha",
+      "description": "Versão em camurça preta com cadarço largo branco e acolchoamento extra no colarinho.",
+      "pixPrice": 179.99,
+      "cardPrice": 199.99,
+      "installments": "em até 3x de R$ 66,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "34–43",
+      "colors": [
+        {
+          "name": "Preto / Branco",
+          "hex": "#1B1A19",
+          "image": "assets/products/vans-knu-skool.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puma-suede",
+      "name": "Tênis Puma Suede Clássico",
+      "brand": "Puma",
+      "category": "Tênis",
+      "tier": "2ª Linha",
+      "description": "Camurça macia com cadarço largo e solado baixo costurado para uso diário.",
+      "pixPrice": 84.99,
+      "cardPrice": null,
+      "installments": "Consultar taxa da maquininha",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "34–43",
+      "colors": [
+        {
+          "name": "Preto / Branco",
+          "hex": "#1E1D1C",
+          "image": "assets/products/puma-suede.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "name": "Azul Marinho / Branco",
+          "hex": "#28364A",
+          "image": "assets/products/puma-suede.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nike-af1",
+      "name": "Tênis Nike Air Force 1 (AF1)",
+      "brand": "Nike",
+      "category": "Tênis",
+      "tier": "2ª Linha",
+      "description": "Clássico branco total com costura reforçada no solado, placa no cadarço e biqueira perfurada.",
+      "pixPrice": 79.99,
+      "cardPrice": 99.99,
+      "installments": "até 3x de R$ 33,33",
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "38–43",
+      "colors": [
+        {
+          "name": "Branco Total",
+          "hex": "#F7F6F2",
+          "image": "assets/products/nike-af1-branco.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nike-borough",
+      "name": "Tênis Nike SB Court Borough",
+      "brand": "Nike",
+      "category": "Tênis",
+      "tier": "1ª Linha",
+      "description": "Acabamento de primeira linha com material estruturado, colarinho macio e solado costurado.",
+      "pixPrice": 149.99,
+      "cardPrice": 169.99,
+      "installments": "até 3x de R$ 56,66",
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "38–43",
+      "colors": [
+        {
+          "name": "Preto / Swoosh Branco",
+          "hex": "#1F1E1D",
+          "image": "assets/products/nike-borough-preto.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "name": "Branco Total",
+          "hex": "#F4F2ED",
+          "image": "assets/products/nike-af1-branco.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nb-comfort",
+      "name": "Tênis New Balance Comfort Plataforma",
+      "brand": "New Balance",
+      "category": "Plataforma",
+      "tier": "1ª Linha",
+      "description": "Solado elevado leve com cabedal macio para conforto ao longo do dia.",
+      "pixPrice": 119.99,
+      "cardPrice": 169.99,
+      "installments": "3x de R$ 56,66",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sizeLabel": "34–39",
+      "colors": [
+        {
+          "name": "Preto / Solado Branco",
+          "hex": "#21201E",
+          "image": "assets/products/nb-comfort-preto.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "name": "Branco / Detalhe Preto",
+          "hex": "#ECE9E2",
+          "image": "assets/products/nb-comfort-preto.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puma-ferrari",
+      "name": "Tênis Puma 180 Scuderia Ferrari",
+      "brand": "Puma",
+      "category": "Tênis",
+      "tier": "1ª Linha",
+      "description": "Cabedal acolchoado em camurça e sintético com recortes esportivos em vermelho.",
+      "pixPrice": 129.99,
+      "cardPrice": 159.99,
+      "installments": "até 3x de R$ 53,33",
+      "sizes": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "sizeLabel": "34–38",
+      "colors": [
+        {
+          "name": "Branco / Vermelho",
+          "hex": "#9E2A2B",
+          "image": "assets/products/puma-ferrari.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        },
+        {
+          "name": "Preto / Vermelho",
+          "hex": "#262222",
+          "image": "assets/products/puma-ferrari.png",
+          "sizes": [
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puma-bmw",
+      "name": "Tênis Puma BMW Motorsport",
+      "brand": "Puma",
+      "category": "Tênis",
+      "tier": "1ª Linha",
+      "description": "Modelo casual masculino em preto fosco com solado branco e emblema clássico.",
+      "pixPrice": 129.99,
+      "cardPrice": null,
+      "installments": "Consultar taxa da maquininha",
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "38–43",
+      "colors": [
+        {
+          "name": "Preto / Branco",
+          "hex": "#1C1B1A",
+          "image": "assets/products/puma-bmw.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fila-rt",
+      "name": "Tênis Fila RT",
+      "brand": "Fila",
+      "category": "Tênis",
+      "tier": "1ª Linha",
+      "description": "Design esportivo em camurça grafite e tela respirável com solado firme e confortável.",
+      "pixPrice": 149.99,
+      "cardPrice": null,
+      "installments": "Consultar taxa da maquininha",
+      "sizes": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sizeLabel": "38–43",
+      "colors": [
+        {
+          "name": "Preto / Grafite / Branco",
+          "hex": "#363839",
+          "image": "assets/products/fila-rt.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "name": "Branco / Preto / Vermelho",
+          "hex": "#E6E3DC",
+          "image": "assets/products/fila-rt.png",
+          "sizes": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ]
+    }
+  ]
+}

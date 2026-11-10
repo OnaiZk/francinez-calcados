@@ -1,0 +1,20 @@
+# Credenciais, Senhas e Arquivos Confidenciais (NUNCA versionar)
+.env
+.env.*
+!.env.example
+data/auth.json
+data/*.tmp
+
+# Gravações Pessoais e Mídias Brutas
+*.mp4
+*.mov
+*.webm
+assets/uploads/*
+!assets/uploads/.gitkeep
+
+# Ferramentas Locais, Logs e Sistema Operacional
+.impeccable/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

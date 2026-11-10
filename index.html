@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>FRANCINEZ CALÇADOS — Catálogo Pronta Entrega</title>
+  <meta name="description" content="Francinez Calçados. Tênis, plataformas, slides e sandálias de 1ª linha, 2ª linha e importados pronta entrega. Escolha cor e numeração e peça no WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600;700&family=Hanken+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Announcement Strip -->
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <span>CALÇADOS DE 1ª LINHA, 2ª LINHA E IMPORTADOS · PRONTA ENTREGA</span>
+      <span class="announcement-sep" aria-hidden="true">|</span>
+      <span>DESCONTO À VISTA NO PIX OU PARCELADO NO CARTÃO</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="inicio">
+    <div class="header-main">
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a href="#colecao" class="header-nav-link">CATÁLOGO</a>
+        <a href="#como-funciona" class="header-nav-link">COMO COMPRAR</a>
+        <a href="#atendimento" class="header-nav-link">WHATSAPP</a>
+      </nav>
+
+      <a href="index.html" class="brand-wordmark" aria-label="Francinez Calçados — Início">
+        <span class="wordmark-main">FRANCINEZ</span>
+        <span class="wordmark-sub">CALÇADOS</span>
+      </a>
+
+      <div class="search-inline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Buscar tênis, marca ou cor..."
+          aria-label="Buscar tênis, marca ou cor"
+        />
+        <button type="button" class="search-clear-btn" id="search-clear-btn" hidden aria-label="Limpar busca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="header-utilities">
+        <button type="button" class="bag-trigger-btn" id="open-bag-btn" aria-label="Abrir sacola de compras">
+          <span>SACOLA</span>
+          <span class="bag-count-num" id="header-bag-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Clean, Uncluttered Top Banner -->
+    <section class="campaign-hero">
+      <div class="campaign-grid">
+        <div class="campaign-editorial">
+          <h1 class="campaign-headline">
+            TÊNIS E CALÇADOS PRONTA ENTREGA
+          </h1>
+          <p class="campaign-lead">
+            Modelos femininos e masculinos de 1ª linha, 2ª linha e importados com preço acessível. Clique no modelo para ver os detalhes, escolher a cor e a numeração e mandar o pedido pronto no WhatsApp.
+          </p>
+          <div class="campaign-actions">
+            <a href="#colecao" class="btn-campaign-primary">VER CATÁLOGO</a>
+            <button type="button" class="btn-campaign-secondary" id="hero-consult-btn">
+              CHAMAR NO WHATSAPP
+            </button>
+          </div>
+        </div>
+
+        <a href="produto.html?id=nb-9060#nb-9060" class="hero-single-feature" aria-label="Ver detalhes do Tênis New Balance 9060">
+          <div class="hero-feature-img-wrap">
+            <img src="assets/products/nb-9060-castor.png" alt="Tênis New Balance 9060 Castor / Areia" />
+          </div>
+          <div class="hero-feature-bar">
+            <div>
+              <span class="lookbook-tag">Importado · 1ª Linha</span>
+              <strong class="lookbook-name">Tênis New Balance 9060 (Tam. 34 ao 40)</strong>
+            </div>
+            <span class="lookbook-price tabular">R$ 129,99 no Pix →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Main Storefront & Filter Bar -->
+    <section class="storefront-section" id="colecao">
+      <div class="filter-architecture" aria-label="Filtros do catálogo">
+        <div class="filter-arch-inner">
+          <!-- Line / Brand Underline Tabs -->
+          <div class="filter-tabs-row">
+            <div class="rail-scroll" id="brand-pills" role="group" aria-label="Filtrar por linha, marca ou modelo">
+              <button type="button" class="arch-tab" data-brand-filter="all" aria-pressed="true">TODOS</button>
+              <button type="button" class="arch-tab" data-brand-filter="Importado · 1ª Linha" aria-pressed="false">IMPORTADOS · 1ª LINHA</button>
+              <button type="button" class="arch-tab" data-brand-filter="1ª Linha" aria-pressed="false">1ª LINHA</button>
+              <button type="button" class="arch-tab" data-brand-filter="2ª Linha" aria-pressed="false">2ª LINHA</button>
+              <button type="button" class="arch-tab" data-brand-filter="New Balance" aria-pressed="false">NEW BALANCE</button>
+              <button type="button" class="arch-tab" data-brand-filter="Nike" aria-pressed="false">NIKE</button>
+              <button type="button" class="arch-tab" data-brand-filter="Puma" aria-pressed="false">PUMA</button>
+              <button type="button" class="arch-tab" data-brand-filter="Miu Miu" aria-pressed="false">MIU MIU</button>
+              <button type="button" class="arch-tab" data-brand-filter="Vans" aria-pressed="false">VANS</button>
+              <button type="button" class="arch-tab" data-brand-filter="Oakley" aria-pressed="false">OAKLEY</button>
+              <button type="button" class="arch-tab" data-brand-filter="Adidas" aria-pressed="false">ADIDAS</button>
+              <button type="button" class="arch-tab" data-brand-filter="Fila" aria-pressed="false">FILA</button>
+              <button type="button" class="arch-tab" data-brand-filter="Slides & Sandálias" aria-pressed="false">SLIDES & SANDÁLIAS</button>
+              <button type="button" class="arch-tab" data-brand-filter="Plataforma" aria-pressed="false">PLATAFORMAS</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Square Size Selector Bar -->
+          <div class="filter-sizes-row">
+            <span class="filter-arch-label">NUMERAÇÃO</span>
+            <div class="rail-scroll" id="size-rail" role="group" aria-label="Filtrar por numeração"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog-container">
+        <!-- Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="toolbar-status">
+            <h2 class="catalog-heading" id="active-filter-heading">Calçados Pronta Entrega</h2>
+            <span class="results-counter" id="results-counter">Mostrando 5 de 21 modelos</span>
+          </div>
+
+          <div class="toolbar-controls">
+            <button type="button" class="clear-active-filters" id="clear-inline-filters" hidden>
+              Limpar filtros
+            </button>
+
+            <div class="mobile-view-toggle" role="group" aria-label="Colunas na visualização mobile">
+              <button type="button" class="view-btn" id="view-grid-2" aria-pressed="true" title="Grade de 2 colunas" aria-label="Visualizar em 2 colunas">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                </svg>
+              </button>
+              <button type="button" class="view-btn" id="view-grid-1" aria-pressed="false" title="Lista de 1 coluna" aria-label="Visualizar em 1 coluna">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="6"></rect>
+                  <rect x="3" y="14" width="18" height="6"></rect>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-Shoe Initial Strip + Expandable Product Grid -->
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+
+        <!-- "Ver mais" Button Below the 5-Shoe Strip -->
+        <div class="load-more-wrap" id="load-more-wrap">
+          <button type="button" class="btn-load-more" id="toggle-more-btn">
+            VER MAIS CALÇADOS (+16 MODELOS)
+          </button>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>Nenhum calçado encontrado para este filtro</h3>
+          <p>Limpe os filtros ou mande mensagem no WhatsApp para perguntar sobre o modelo ou numeração que você procura.</p>
+          <div class="empty-actions">
+            <button type="button" class="btn-sharp-gold" id="reset-filters-btn">
+              MOSTRAR TODOS OS MODELOS
+            </button>
+            <button type="button" class="btn-sharp-outline" id="empty-consult-btn">
+              CHAMAR NO WHATSAPP
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple 3-Column How to Order Section -->
+    <section class="service-architecture" id="como-funciona">
+      <div class="service-grid">
+        <div class="service-col">
+          <h3>CLIQUE NO CALÇADO</h3>
+          <p>Toque no modelo que você gostou para abrir a página dele, ver as cores disponíveis e escolher sua numeração.</p>
+        </div>
+        <div class="service-col">
+          <h3>PIX OU CARTÃO</h3>
+          <p>Adicione um ou mais pares na sacola. O catálogo já mostra o valor com desconto no Pix ou a opção no cartão.</p>
+        </div>
+        <div class="service-col">
+          <h3>MANDE NO WHATSAPP</h3>
+          <p>Ao clicar em finalizar, a mensagem já abre pronta no WhatsApp para combinar a entrega ou retirada.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Sticky Bottom Bag Bar -->
+  <div class="floating-bag-bar" id="floating-bag-bar" role="region" aria-label="Resumo da sacola">
+    <div class="floating-bag-info">
+      <span class="floating-bag-count" id="floating-bag-count">0</span>
+      <div class="floating-bag-text">
+        <strong id="floating-bag-total">R$ 0,00</strong>
+        <span id="floating-bag-summary">Ver sacola e enviar no WhatsApp</span>
+      </div>
+    </div>
+    <span class="floating-bag-cta">FINALIZAR →</span>
+  </div>
+
+  <!-- Shopping Bag Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="bag-drawer" id="bag-drawer" aria-hidden="true" aria-label="Sacola de compras para WhatsApp">
+    <div class="drawer-header">
+      <div>
+        <div class="drawer-title">SACOLA DE PEDIDO</div>
+        <p class="drawer-subtitle" id="wa-target-status">Confira seus pares e envie no WhatsApp</p>
+      </div>
+      <button type="button" class="drawer-close-btn" id="close-bag-btn" aria-label="Fechar sacola">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="bag-section">
+        <div class="bag-section-header">
+          <span>ITENS SELECIONADOS</span>
+          <span class="tabular" id="drawer-items-count">0 pares</span>
+        </div>
+        <p id="bag-empty-notice" class="bag-empty-text">
+          Sua sacola está vazia. Abra um calçado no catálogo, escolha a numeração e clique em "Adicionar à Sacola".
+        </p>
+        <ul class="bag-items-list" id="bag-items-list"></ul>
+      </div>
+
+      <div class="bag-section">
+        <div class="bag-section-header">
+          <span>PAGAMENTO & ENTREGA</span>
+        </div>
+
+        <div class="option-grid-2" id="payment-options" role="radiogroup" aria-label="Escolha a forma de pagamento">
+          <button type="button" class="choice-box" data-payment="pix" role="radio" aria-checked="true">
+            <span>PIX À VISTA</span>
+            <small>Com desconto</small>
+          </button>
+          <button type="button" class="choice-box" data-payment="cartao" role="radio" aria-checked="false">
+            <span>CARTÃO DE CRÉDITO</span>
+            <small>Parcelamento</small>
+          </button>
+        </div>
+
+        <div class="option-grid-2 mt-8" id="delivery-options" role="radiogroup" aria-label="Escolha a modalidade de entrega">
+          <button type="button" class="choice-box" data-delivery="entrega" role="radio" aria-checked="true">
+            <span>RECEBER EM CASA</span>
+            <small>Entrega no endereço</small>
+          </button>
+          <button type="button" class="choice-box" data-delivery="retirada" role="radio" aria-checked="false">
+            <span>COMBINAR RETIRADA</span>
+            <small>Alinhar no WhatsApp</small>
+          </button>
+        </div>
+
+        <div class="customer-fields">
+          <input
+            type="text"
+            id="customer-name"
+            class="field-input"
+            placeholder="Seu nome (opcional)"
+            aria-label="Seu nome"
+          />
+          <input
+            type="text"
+            id="customer-address"
+            class="field-input"
+            placeholder="Bairro ou endereço (opcional)"
+            aria-label="Bairro ou endereço para entrega"
+          />
+        </div>
+      </div>
+
+      <div class="bag-section">
+        <div class="bag-section-header">
+          <span>PRÉVIA DA MENSAGEM</span>
+        </div>
+        <div class="wa-preview-box" id="wa-message-preview"></div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="totals-block">
+        <div class="totals-comparison">
+          <span class="total-label">TOTAL DO PEDIDO</span>
+          <span class="total-value" id="drawer-total-main">R$ 0,00</span>
+        </div>
+        <div class="total-alt" id="drawer-total-alt"></div>
+      </div>
+
+      <button type="button" class="checkout-wa-btn" id="checkout-wa-btn" disabled>
+        <span>ENVIAR PEDIDO NO WHATSAPP</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="atendimento">
+    <div class="footer-grid">
+      <div class="footer-col-brand">
+        <div class="footer-wordmark">
+          <span class="wordmark-main">FRANCINEZ</span>
+          <span class="wordmark-sub">CALÇADOS</span>
+        </div>
+        <p class="footer-about">
+          Calçados femininos e masculinos de 1ª linha, 2ª linha e importados a pronta entrega. Escolha no site e faça seu pedido direto pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">NAVEGAÇÃO</div>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#colecao">Catálogo de Calçados</a></li>
+          <li><a href="#como-funciona">Como Comprar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">INFORMAÇÕES</div>
+        <ul>
+          <li>WhatsApp: (11) 98126-4344</li>
+          <li>Trabalhamos com 1ª linha, 2ª linha e importados</li>
+          <li>Desconto à vista no Pix</li>
+          <li>Entrega ou retirada combinada no WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© FRANCINEZ CALÇADOS · CATÁLOGO PRONTA ENTREGA</span>
+      <span>WHATSAPP (11) 98126-4344</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

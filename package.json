@@ -1,0 +1,14 @@
+{
+  "name": "francinez-calcados",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo Online e Painel Administrativo Seguro — Francinez Calçados (Zero Dependências Externas)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reset-password": "node server.js --reset-password"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

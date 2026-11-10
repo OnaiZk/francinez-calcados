@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>ACESSO RESTRITO — Francinez Calçados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600;700&family=Hanken+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="admin-body">
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <span>AMBIENTE PRIVADO CRIPTOGRAFADO · FRANCINEZ CALÇADOS</span>
+    </div>
+  </div>
+
+  <main class="login-shell">
+    <section class="login-card" aria-labelledby="login-heading">
+      <div class="login-brand">
+        <span class="wordmark-main">FRANCINEZ</span>
+        <span class="wordmark-sub">ACESSO EXCLUSIVO DA LOJA</span>
+      </div>
+
+      <div class="login-header-copy">
+        <h1 class="login-title" id="login-heading">Painel Administrativo</h1>
+        <p class="login-desc">
+          Digite a senha administrativa da loja para cadastrar calçados, padronizar fotos em estúdio e atualizar valores.
+        </p>
+      </div>
+
+      <div class="login-error-box" id="login-error" role="alert" hidden></div>
+
+      <form id="admin-login-form" class="login-form" novalidate>
+        <!-- Honeypot anti-bot trap -->
+        <div class="hp-trap" aria-hidden="true">
+          <label for="login-website">Não preencha este campo</label>
+          <input type="text" id="login-website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="admin-field">
+          <label for="login-password">Senha da Proprietária</label>
+          <div class="password-field-wrap">
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              class="field-input"
+              placeholder="Digite sua senha de acesso"
+              autocomplete="current-password"
+              required
+            />
+            <button type="button" class="btn-toggle-pw" id="toggle-pw-btn" aria-label="Mostrar ou ocultar senha">
+              MOSTRAR
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-save-product" id="login-submit-btn">
+          ENTRAR NO PAINEL DA LOJA
+        </button>
+      </form>
+
+      <div class="login-security-foot">
+        <span>Proteção ativa contra invasão e tentativas automáticas · Clientes não possuem acesso a esta página.</span>
+        <a href="/" class="login-back-store">← Voltar para a vitrine pública</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="__ADMIN_PATH__/login.js"></script>
+</body>
+</html>
